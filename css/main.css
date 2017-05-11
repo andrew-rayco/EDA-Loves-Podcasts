@@ -1,0 +1,14 @@
+body {
+  background: lightgrey;
+  font-size: 16px;
+}
+
+.container {
+  margin-top: 20px;
+  background: lightblue;
+  padding: 2em;
+}
+
+img {
+  width: 100%;
+}

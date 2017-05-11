@@ -1,0 +1,39 @@
+{
+  "name": "EDA-Loves-Podcasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "knex": "knex",
+    "dev": "nodemon index",
+    "debug": "node --inspect --debug-brk index",
+    "test": "ava 'tests/**/*.test.js'",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherlyc/EDA-Loves-Podcasts.git"
+  },
+  "keywords": [
+    "knex",
+    "joins"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sherlyc/EDA-Loves-Podcasts/issues"
+  },
+  "homepage": "https://github.com/sherlyc/EDA-Loves-Podcasts#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "knex": "^0.11.10",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  }
+}

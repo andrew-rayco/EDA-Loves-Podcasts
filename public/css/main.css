@@ -1,14 +1,105 @@
 body {
-  background: lightgrey;
+  background: #ffcc00;
   font-size: 16px;
 }
 
 .container {
   margin-top: 20px;
-  background: lightblue;
+  background: #ffcc00;
   padding: 2em;
+}
+
+.header {
+  margin-bottom: 2em;
+}
+
+h1 {
+	color: #231900;
+	font-family: 'Open Sans';
+	font-size: 94px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	line-height: 84px;
+	margin-bottom: .1em;
+	text-transform: uppercase;
+  text-align: center;
+}
+
+h3, h4 {
+  font-family: 'Open Sans'
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+	color: #231900;
+	font-family: 'Crimson Text';
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 48px;
+	margin-bottom: 48px;
+	max-width: 650px;
+}
+
+a {
+	color: #231900;
+}
+
+a:hover {
+
 }
 
 img {
   width: 100%;
+  /*background: #fff;*/
 }
+
+button {
+  color: #231900;
+  width: 100%;
+  padding: 0;
+  border-color: #231900;
+}
+
+.description {
+  font-size: 1.3em;
+  line-height: 1.2em;
+}
+
+
+.footer p {
+  color: #231900;
+  font-family: 'Crimson Text';
+  font-size: 14px;
+  float: right;
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  button {
+    font-size: 12px;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  button {
+    font-size: 9px;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  button {
+    font-size: 11px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

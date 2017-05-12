@@ -14,13 +14,14 @@ router.get('/', function(req, res) {
 })
 
 
+router.get('/add', function(req, res){
+    res.render('add.hbs')
+})
 
+router.post('/add', function(req, res){
 
-// router.get('/add', function(req, res) {
-//   db.addPostcast(req.app.get('knex')
-//   .then
-//   )
-// })
+})
+
 
 
 

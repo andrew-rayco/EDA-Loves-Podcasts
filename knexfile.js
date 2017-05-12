@@ -7,6 +7,11 @@ module.exports = {
     },
     useNullAsDefault: true
   },
+
+  // production: {
+  //     client: 'postgresql'
+  // },
+
   test: {
     client: 'sqlite3',
     connection: {

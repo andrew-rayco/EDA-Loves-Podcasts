@@ -1,8 +1,9 @@
 var express = require('express')
 var router = express.Router()
+var db = require('./db')
 
 router.get('/', function(req, res) {
-  db.getPodcasts(req.app.get('knex')
+  db.getPodcasts(req.app.get('db'))
   .then((results) => {
     res.render('index.hbs', {results})
   })
@@ -11,6 +12,7 @@ router.get('/', function(req, res) {
     })
 
 })
+
 
 
 

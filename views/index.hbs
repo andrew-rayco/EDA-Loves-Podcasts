@@ -2,9 +2,9 @@
 <div class="row main">
   {{#each results}}
   <div class="three columns">
-    <h4>{{name}}</h4>
     <img src="{{imgURL}}" alt="{{name}} logo">
-    <p>{{description}}</p>
+    <h4>{{name}}</h4>
+    <p class="description">{{description}}</p>
     <form action="{{url}}">
       <button type="submit" name="button">Visit Podcast</button>
     </form>

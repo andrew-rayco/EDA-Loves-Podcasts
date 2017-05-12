@@ -1,0 +1,7 @@
+<a href="/">Home</a>
+<h3>Admin page</h3>
+<ul>
+  {{#each results}}
+    <li>{{name}} - <a href="/delete/{{id}}">Delete</a></li>
+  {{/each}}
+</ul>

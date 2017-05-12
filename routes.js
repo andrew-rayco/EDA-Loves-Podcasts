@@ -39,7 +39,14 @@ router.get('/delete/:id', function(req, res){
 })
 
 router.get('/edit', function(req, res){
-  res.render('edit.hbs')
+  db.getPodcasts(req.app.get('db'))
+  .then((results) => {
+    res.render('edit.hbs', {results})
+  })
+  .catch(function (err) {
+      res.status(500).send('DATABASE ERROR: ' + err.message)
+    })
+
 })
 
 

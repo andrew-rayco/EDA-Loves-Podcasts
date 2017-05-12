@@ -1,20 +1,24 @@
+<div class="row">
+  <div class="six columns dont-see">
+    <p>Don't see your favourite?</p>
+  </div>
+  <div class="three columns">
+    <form class="add-fav" action="/add" method="post">
+      <button type="submit" name="button">Add it here</button>
+    </form>
+  </div>
+</div>
+
 
 <div class="row main">
   {{#each results}}
-  <div class="three columns">
+  <div class="three columns listing">
     <img src="{{imgURL}}" alt="{{name}} logo">
-    <h4>{{name}}</h4>
+    <h4 class="dont-break-out">{{name}}</h4>
     <p class="description">{{description}}</p>
     <form action="{{url}}">
       <button type="submit" name="button">Visit Podcast</button>
     </form>
   </div>
   {{/each}}
-
-</div>
-<div class="row">
-  <div class="six columns">
-    {{results.[0].name}}
-
-  </div>
 </div>

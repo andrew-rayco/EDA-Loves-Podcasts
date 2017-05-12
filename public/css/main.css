@@ -33,6 +33,10 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-size: 1.5em;
+}
+
 p {
 	color: #231900;
 	font-family: 'Crimson Text';
@@ -76,6 +80,22 @@ button {
   float: right;
 }
 
+/*css-tricks.com long word wrap fix*/
+.dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -88,6 +108,10 @@ button {
 @media (min-width: 550px) {
   button {
     font-size: 9px;
+  }
+
+  .listing:nth-child(5), .listing:nth-child(9) {
+    margin-left: 0;
   }
 }
 

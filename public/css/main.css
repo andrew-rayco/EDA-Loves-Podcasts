@@ -114,6 +114,15 @@ button {
   button {
     font-size: 12px;
   }
+
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -145,12 +154,22 @@ button {
 
 .sub-h {
   font-size: 1.6em;
+  line-height: 3vh;
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   button {
     font-size: 11px;
+  }
+
+  h1 {
+    font-size: 94px;
+    line-height: 84px;
+  }
+
+  h3 {
+    font-size: 36px;
   }
 }
 

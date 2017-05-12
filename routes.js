@@ -38,6 +38,10 @@ router.get('/delete/:id', function(req, res){
     })
 })
 
+router.get('/edit', function(req, res){
+  res.render('edit.hbs')
+})
+
 
 
 

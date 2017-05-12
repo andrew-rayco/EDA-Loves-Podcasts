@@ -2,9 +2,9 @@ exports.up = function (knex, Promise) {
   return knex.schema.createTable('podcasts', function (table) {
     table.increments('id').primary()
     table.string('name')
-    table.string('imgURL')
-    table.string('url')
-    table.string('description')
+    table.text('imgURL')
+    table.text('url')
+    table.text('description')
 
   })
 }

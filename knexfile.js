@@ -8,9 +8,10 @@ module.exports = {
     useNullAsDefault: true
   },
 
-  // production: {
-  //     client: 'postgresql'
-  // },
+  production: {
+      client: 'postgresql',
+      connection: process.env.DATABASE_URL || {}
+  },
 
   test: {
     client: 'sqlite3',

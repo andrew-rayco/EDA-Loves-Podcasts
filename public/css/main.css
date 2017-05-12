@@ -133,6 +133,20 @@ button {
 
 }
 
+.rotate {
+  transform: rotate(90deg);
+  margin-top: 100px;
+  width: 300px;
+}
+
+.rotate img {
+  height: 200px;
+}
+
+.sub-h {
+  font-size: 1.6em;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   button {

@@ -28,6 +28,16 @@ router.post('/add', function(req, res){//perform insert to db
     })
 })
 
+router.get('/delete/:id', function(req, res){
+  db.delPodcast(req.params.id, req.app.get('db'))
+  .then((result)=>{
+    res.redirect('/')
+  })
+  .catch(function (err) {
+      res.status(500).send('DATABASE ERROR: ' + err.message)
+    })
+})
+
 
 
 

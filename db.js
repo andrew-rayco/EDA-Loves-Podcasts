@@ -1,6 +1,7 @@
 module.exports = {
   getPodcasts,
-  addPodcast
+  addPodcast,
+  delPodcast
 }
 
 
@@ -13,7 +14,12 @@ function addPodcast (data, connection){
     .insert({name: data.name,
              imgURL: data.imgURL,
              url: data.url,
-             description: data.description
+             descriiption
       })
+}
 
+function delPodcast (id, connection){
+  return connection ('podcasts')
+    .del()
+    .where('id', id)
 }

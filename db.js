@@ -14,7 +14,7 @@ function addPodcast (data, connection){
     .insert({name: data.name,
              imgURL: data.imgURL,
              url: data.url,
-             descriiption
+             description: data.description
       })
 }
 
